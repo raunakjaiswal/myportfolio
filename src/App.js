@@ -34,24 +34,23 @@ function App() {
     projects: false
   })
 
-  const changeNavbarColor = () => {
-    console.log(window.scrollY)
-    if (window.scrollY < 600) {
-      setcolorchange({ ...colorchange, aboutme: true, projects: false, education: false, skills: false })
-    }
-    else if (window.scrollY >= 600 && window.scrollY < 1300) {
-      setcolorchange({ ...colorchange, aboutme: false, education: true, projects: false, skills: false })
-    }
-    else if (window.scrollY >= 1300 && window.scrollY < 1849) {
-      setcolorchange({ ...colorchange, education: false, skills: true, aboutme: false, projects: false });
-    }
-    else if (window.scrollY >= 1849) {
-      setcolorchange({ ...colorchange, skills: false, projects: true, education: false, aboutme: false })
-    }
-
-  };
+  
   useEffect(() => {
+     const changeNavbarColor = () => {
+      if (window.scrollY < 600) {
+        setcolorchange({ aboutme: true, projects: false, education: false, skills: false })
+      }
+      else if (window.scrollY >= 600 && window.scrollY < 1300) {
+        setcolorchange({ aboutme: false, education: true, projects: false, skills: false })
+      }
+      else if (window.scrollY >= 1300 && window.scrollY < 1849) {
+        setcolorchange({ education: false, skills: true, aboutme: false, projects: false });
+      }
+      else if (window.scrollY >= 1849) {
+        setcolorchange({ skills: false, projects: true, education: false, aboutme: false })
+      }
 
+    };
     window.addEventListener('scroll', changeNavbarColor);
     AOS.init({
       duration: 1000
