@@ -121,7 +121,7 @@ function App() {
               </p>
               <p className="text" style={{ fontSize: 22, color: 'white', fontWeight: '500' }}>
                 In my free time, you can catch me listening music, playing chess,<br />
-                or taking part in competive programming contests.
+                or taking part in competitive programming contests.
               </p>
 
             </div>
