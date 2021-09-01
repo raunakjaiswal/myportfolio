@@ -117,7 +117,7 @@ function App() {
               </h1>
               <p className="text" style={{ fontSize: 22, color: 'white', fontWeight: '500' }}>
                 Building apps, websites , exploring various ideas and technologies.<br />
-                Greatly Enthusiastic about cloud Technology and Artificial Intelligence .
+                Greatly Enthusiastic about Deep Learning and Artificial Intelligence .
               </p>
               <p className="text" style={{ fontSize: 22, color: 'white', fontWeight: '500' }}>
                 In my free time, you can catch me listening music, playing chess,<br />
